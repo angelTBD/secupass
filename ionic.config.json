@@ -1,0 +1,7 @@
+{
+  "name": "secupass",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
