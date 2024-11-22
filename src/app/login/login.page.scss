@@ -1,0 +1,50 @@
+.login-page {
+    --background: #f8f8f8;
+  
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+  
+    .logo {
+      width: 120px;
+      height: auto;
+    }
+  
+    .text-center {
+      text-align: center;
+  
+      .title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: purple;
+      }
+  
+      .subtitle {
+        font-size: 1.5rem;
+        color: #666;
+      }
+    }
+  
+    form {
+      margin-top: 20px;
+  
+      ion-item {
+        margin-bottom: 15px;
+      }
+  
+      .buttons {
+        margin-top: 20px;
+  
+        ion-button {
+          font-size: 1rem;
+  
+          &:first-of-type {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+  
