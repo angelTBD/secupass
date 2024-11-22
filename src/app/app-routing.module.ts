@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'tabla',
     loadChildren: () => import('./tabla/tabla.module').then( m => m.TablaPageModule)
+  },
+  {
+    path: 'usuario',
+    loadChildren: () => import('./usuario/usuario.module').then( m => m.UsuarioPageModule)
   }
 ];
 
