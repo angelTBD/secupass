@@ -1,13 +1,50 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>tabla</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">tabla</ion-title>
+<ion-content class="ion-padding passwords-page">
+  <!-- Encabezado -->
+  <ion-header translucent>
+    <ion-toolbar class="header-toolbar">
+      <!-- Ícono de usuario en la esquina izquierda -->
+      <ion-buttons slot="start">
+        <ion-button>
+          <ion-icon name="person-circle-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <!-- Logo y texto centrados -->
+      <ion-title class="header-title">
+        <img src="assets/secupasslogo.png" alt="Logo" class="logo"/>
+        <div>Contraseñas Creadas</div>
+      </ion-title>
+      <!-- Botón de cerrar sesión -->
+      <ion-buttons slot="end">
+        <ion-button color="danger">
+          <ion-icon name="log-out-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
+
+  <!-- Tabla de contraseñas -->
+  <div class="table-container">
+    <ion-grid>
+      <ion-row class="table-header">
+        <ion-col>Aplicación</ion-col>
+        <ion-col>Contraseña</ion-col>
+        <ion-col>Acciones</ion-col>
+      </ion-row>
+      <!-- Filas de ejemplo -->
+      <ion-row>
+        <ion-col>aplicacion</ion-col>
+        <ion-col>contaseña</ion-col>
+        <ion-col>
+          <ion-icon color="danger" size="small"  name="trash-outline"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <!-- Botón de agregar contraseña -->
+    <div class="add-button">
+      <ion-button expand="block" color="primary">
+        Agregar Contraseña
+      </ion-button>
+    </div>
+  </div>
 </ion-content>
+
