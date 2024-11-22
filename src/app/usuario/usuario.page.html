@@ -1,13 +1,48 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>usuario</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">usuario</ion-title>
+<ion-content class="ion-padding profile-page">
+  <!-- Encabezado -->
+  <ion-header translucent>
+    <ion-toolbar class="header-toolbar">
+      <!-- Ícono de home en la esquina izquierda -->
+      <ion-buttons slot="start">
+        <ion-button routerLink="/tabla">
+          <ion-icon name="home-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <!-- Logo y texto centrados -->
+      <ion-title class="header-title">
+        <img src="assets/secupasslogo.png" alt="Logo" class="logo" />
+        <div>Usuario</div>
+      </ion-title>
+      <!-- Botón de cerrar sesión -->
+      <ion-buttons slot="end">
+        <ion-button color="danger">
+          <ion-icon name="log-out-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
+
+  <!-- Cuerpo de la página -->
+  <div class="body-container">
+    <!-- Icono o imagen de usuario -->
+    <div class="user-icon">
+      <ion-icon name="person-circle-outline"></ion-icon>
+    </div>
+
+    <!-- Información del usuario -->
+    <div class="user-info">
+      <ion-item lines="none">
+        <ion-label>Nombre de usuario:</ion-label>
+        <ion-text class="info-text">userName</ion-text>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label>Correo:</ion-label>
+        <ion-text class="info-text">userEmail</ion-text>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label>Contraseña:</ion-label>
+        <ion-text class="info-text">********</ion-text>
+      </ion-item>
+    </div>
+  </div>
 </ion-content>
