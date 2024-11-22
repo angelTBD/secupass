@@ -1,13 +1,70 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Generar</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding generate-password-page">
+  <!-- Encabezado -->
+  <ion-header translucent>
+    <ion-toolbar class="header-toolbar">
+      <!-- Ícono de home en la esquina izquierda -->
+      <ion-buttons slot="start">
+        <ion-button routerLink="/tabla">
+          <ion-icon name="home-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Generar</ion-title>
+      <!-- Logo y texto centrados -->
+      <ion-title class="header-title">
+        <img src="assets/secupasslogo.png" alt="Logo" class="logo" />
+        <div>Generar Contraseña</div>
+      </ion-title>
+
+      <!-- Botón de cerrar sesión -->
+      <ion-buttons slot="end">
+        <ion-button color="danger" routerLink="/login">
+          <ion-icon name="log-out-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
+
+  <!-- Cuerpo -->
+  <div class="body-container">
+    <!-- Título -->
+    <div class="title">
+      Genera una contraseña segura
+    </div>
+
+    <!-- Entradas de longitud -->
+    <ion-item>
+      <ion-label position="stacked">Longitud mínima:</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Longitud máxima:</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+
+    <!-- Opciones -->
+    <ion-list>
+      <ion-item>
+        <ion-label>¿Con números?</ion-label>
+        <ion-toggle></ion-toggle>
+      </ion-item>
+      <ion-item>
+        <ion-label>¿Con mayúsculas?</ion-label>
+        <ion-toggle></ion-toggle>
+      </ion-item>
+      <ion-item>
+        <ion-label>¿Con caracteres especiales?</ion-label>
+        <ion-toggle></ion-toggle>
+      </ion-item>
+    </ion-list>
+
+    <!-- Botón para generar contraseña -->
+    <ion-button expand="block" color="primary">
+      Generar Contraseña
+    </ion-button>
+
+    <!-- Contraseña generada -->
+    <div class="password-display">
+      <ion-text>Contraseña</ion-text>
+    </div>
+  </div>
 </ion-content>
