@@ -1,0 +1,54 @@
+.generate-password-page {
+    --background: #f8f8f8;
+  
+    /* Encabezado */
+    .header-toolbar {
+      --background: purple;
+      --color: white;
+      text-align: center;
+  
+      .header-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2rem;
+  
+        .logo {
+          width: 50px;
+          height: auto;
+          margin-bottom: 5px;
+        }
+      }
+  
+      ion-buttons ion-icon {
+        font-size: 1.8rem;
+        color: white;
+      }
+    }
+  
+    /* Cuerpo */
+    .body-container {
+      margin-top: 20px;
+      padding: 0 20px;
+  
+      .title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+  
+      ion-item {
+        margin-bottom: 15px;
+      }
+  
+      .password-display {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #333;
+      }
+    }
+  }
+  
