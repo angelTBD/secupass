@@ -28,7 +28,7 @@ export class LoginPage implements OnInit {
       (response) => {
         console.log('Login exitoso:', response);
         // Redirigir a la página deseada, por ejemplo
-        this.router.navigate(['/tabla']);
+        this.router.navigate(['/generar']);
       },
       (error) => {
         console.error('Error al iniciar sesión:', error);
