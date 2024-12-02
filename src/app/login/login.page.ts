@@ -20,7 +20,7 @@ export class LoginPage implements OnInit {
       password: this.password
     };
   
-    this.http.post('http://localhost:3000/users/login', loginData, {
+    this.http.post('https://proyecto-webintegral.onrender.com/users/login', loginData, {
       headers: {
         'Content-Type': 'application/json'  // Asegúrate de que el backend acepte este tipo de contenido
       }

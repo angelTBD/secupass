@@ -23,7 +23,7 @@ export class RegistroPage implements OnInit {
       correo: this.correo
     };
 
-    this.http.post('http://localhost:3000/users/register', registerData, {
+    this.http.post('https://proyecto-webintegral.onrender.com/users/register', registerData, {
       headers: {
         'Content-Type': 'application/json'
       }
